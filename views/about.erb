@@ -1,0 +1,117 @@
+<div class="about-page">
+    <h1 class="page-title">About Me</h1>
+    
+    <div class="profile-section">
+        <div class="profile-content">
+            <h2>안녕하세요! 👋</h2>
+            <p>
+                개발과 기술에 대한 이야기를 공유하는 블로그입니다.
+                주로 웹 개발, 프로그래밍, 그리고 새로운 기술에 대한 글을 작성합니다.
+            </p>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-list">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Ruby</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>Ruby on Rails</li>
+                    <li>Sinatra</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact</h2>
+        <p>
+            <a href="https://github.com/jinnyseo75" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </p>
+    </div>
+</div>
+
+<style>
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.profile-section {
+    margin-bottom: 3rem;
+}
+
+.profile-content {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.profile-content h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.skills-section {
+    margin-bottom: 3rem;
+}
+
+.skills-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    color: #586069;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact-section a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+</style> 

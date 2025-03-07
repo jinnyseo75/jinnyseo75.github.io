@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinnySeo's Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="site-title"><a href="/">JinnySeo's Blog</a></h1>
+                <p class="site-description">Development & Tech Blog</p>
+            </div>
+            <nav class="site-nav">
+                <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="/posts" class="nav-link"><i class="fas fa-archive"></i> Posts</a>
+                <a href="/about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                <a href="https://github.com/jinnyseo75" class="nav-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </nav>
+        </header>
+
+        <main class="site-content">
+            <%= yield %>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/jinnyseo75" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">&copy; <%= Time.now.year %> JinnySeo's Blog. Built with Ruby & Sinatra.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

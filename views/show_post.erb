@@ -1,0 +1,12 @@
+<article class="post">
+  <h1><%= @post['title'] %></h1>
+  <time datetime="<%= @post['created_at'] %>">
+    <%= Time.parse(@post['created_at']).strftime("%B %d, %Y") %>
+  </time>
+  
+  <div class="post-content">
+    <%= @post['content'] %>
+  </div>
+  
+  <a href="/" class="back-link">← Back to Posts</a>
+</article> 

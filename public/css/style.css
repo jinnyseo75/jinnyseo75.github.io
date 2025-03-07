@@ -1,0 +1,236 @@
+/* Base styles */
+:root {
+    --primary-color: #24292e;
+    --secondary-color: #0366d6;
+    --text-color: #24292e;
+    --light-gray: #f6f8fa;
+    --border-color: #e1e4e8;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.site-header {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.site-description {
+    color: #586069;
+    font-size: 1.1rem;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--light-gray);
+}
+
+/* Posts list styles */
+.posts-list {
+    margin-bottom: 3rem;
+}
+
+.post-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.post-card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.post-meta {
+    color: #586069;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.post-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--secondary-color);
+}
+
+.post-excerpt {
+    color: #444d56;
+    margin-bottom: 1.5rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--light-gray);
+    border-radius: 6px;
+}
+
+.empty-state i {
+    color: #586069;
+    margin-bottom: 1rem;
+}
+
+.empty-state p {
+    color: #586069;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #2188ff;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.prev-page,
+.next-page {
+    padding: 0.5rem 1rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.prev-page:hover,
+.next-page:hover {
+    background-color: var(--light-gray);
+    border-color: #bbb;
+}
+
+/* Footer styles */
+.site-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #586069;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    color: #586069;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2rem;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+    }
+
+    .post-card {
+        padding: 1.5rem;
+    }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
+} 
