@@ -18,10 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: JinnySeo's Blog
+title: JinnySeo's Digital Garden
 email: your-email@example.com
 description: >-
-  Development & Tech Blog
+  A digital sanctuary exploring the convergence of Mathematics, Economics, 
+  Philosophy of History, and Artificial Intelligence. Join me in uncovering 
+  the hidden connections between these fascinating fields.
 baseurl: ""
 url: "https://jinnyseo75.github.io"
 twitter_username: jekyllrb

@@ -1,0 +1,28 @@
+/* Customizations for JinnySeo's Digital Garden */
+
+// Override theme color variables
+$primary-color: #24292e;
+$secondary-color: #0366d6;
+$accent-color: #2188ff;
+
+// Import the default minima styles
+@import "minima";
+
+/* Additional custom styles */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: lighten($primary-color, 20%);
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} 
