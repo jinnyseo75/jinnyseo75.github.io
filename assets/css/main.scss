@@ -1,23 +1,126 @@
 /* Customizations for JinnySeo's Digital Garden */
 
-// Override theme color variables
+@use "sass:color";
+@import "minima";
+
+// Define custom color variables
 $primary-color: #24292e;
 $secondary-color: #0366d6;
 $accent-color: #2188ff;
+$background-color: #ffffff;
+$text-color: #333333;
+$subtext-color: #586069;
+$footer-bg: #f6f8fa;
 
-// Import the default minima styles
-@import "minima";
-
-/* Additional custom styles */
-
+/* Base styles */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-.header {
-  background-color: lighten($primary-color, 20%);
+/* Header styling */
+.site-header {
+  background: linear-gradient(135deg, color.adjust($primary-color, $lightness: 30%), $primary-color);
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid color.scale($primary-color, $lightness: -20%);
 }
 
+.site-title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.site-title a {
+  color: $background-color;
+  text-decoration: none;
+}
+
+.site-description {
+  color: $subtext-color;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* Navigation bar */
+.site-nav {
+  margin-top: 1.5rem;
+}
+
+.nav-link {
+  background-color: transparent;
+  color: $background-color;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid $background-color;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+/* Main content area */
+.site-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Post styles */
+.post-card {
+  background-color: $background-color;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba($primary-color, 0.1);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba($primary-color, 0.15);
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-title a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-excerpt, .post-content {
+  font-size: 1rem;
+  color: $text-color;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: $footer-bg;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: $subtext-color;
+}
+
+/* Link styles */
 a {
   color: $secondary-color;
   text-decoration: none;
@@ -25,4 +128,14 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2.5rem;
+  }
+  .post-card {
+    padding: 1rem;
+  }
 } 
